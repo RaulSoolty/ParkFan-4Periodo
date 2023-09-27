@@ -1,0 +1,60 @@
+/* Estilos gerais do formulário */
+form {
+    width: 500px; /* Mantido em 500px */
+    margin: 20px auto; /* Adicionado margem superior e inferior para separar do menu e do conteúdo abaixo */
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #172554; /* Azul para a borda do formulário */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para rótulos dos campos */
+label {
+    display: inline-block; /* Alterado para inline-block para alinhar à esquerda dos campos de entrada */
+    margin-right: 10px; /* Adicionado margem à direita para separar do campo de entrada */
+    font-weight: bold;
+    width: 150px; /* Adicionado largura fixa para os rótulos */
+}
+
+/* Estilo para campos de entrada de texto */
+input[type="text"],
+input[type="email"],
+#rua,
+#cidade,
+#estado,
+#codigoPostal {
+    box-sizing: border-box; /* Adicionado para incluir padding e borda na largura total */
+    width: calc(100% - 170px); /* Reduzido para permitir espaço para o rótulo */
+    padding: 10px;
+    margin: 5px 0; /* Adicione margem em todos os lados */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para botão de envio */
+button[type="submit"] {
+    background-color: #F17535; /* Laranja para o botão de envio */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilo para botão de envio quando hover */
+button[type="submit"]:hover {
+    background-color: #E3602B; /* Laranja mais escuro ao passar o mouse */
+}
+
+/* Estilos para mensagens de erro (opcional) */
+.error-message {
+    color: #FF0000; /* Vermelho para mensagens de erro */
+    font-size: 14px;
+    margin-top: 5px;
+}
+/* Estilo para campos inválidos */
+.is-invalid {
+    border: 1px solid #FF0000; /* Borda vermelha para campos inválidos */
+  }
+  

@@ -1,0 +1,30 @@
+/* menu.component.css */
+nav {
+    background-color: #172554; /* Azul para o fundo do menu */
+    color: white;
+    display: flex; /* Adicionado para alinhar os itens do menu e a logo */
+    justify-content: space-between; /* Adicionado para colocar a logo e os itens do menu em lados opostos */
+    padding: 3px 0; /* Adicionado para aumentar a altura da barra do menu */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Mantido para alinhar os itens do menu horizontalmente */
+  }
+  
+  li {
+    margin-right: 20px; /* Aumentado para dar mais espaço entre os itens do menu */
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px; /* Mantido para dar mais espaço ao redor dos links */
+    border-radius: 5px; /* Mantido para arredondar os cantos dos links */
+  }
+  
+  a:hover {
+    background-color: #F17535; /* Laranja para os links ao passar o mouse */
+  }
+  

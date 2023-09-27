@@ -1,0 +1,46 @@
+<form (submit)="submitForm()">
+  <!-- Campo Nome -->
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" [(ngModel)]="nome" name="nome" required [ngClass]="{ 'is-invalid': !isNomeValid() }">
+  <div class="error-message" *ngIf="!isNomeValid()">Nome é obrigatório</div>
+
+  <!-- Campo Sobrenome -->
+  <label for="sobrenome">Sobrenome:</label>
+  <input type="text" id="sobrenome" [(ngModel)]="sobrenome" name="sobrenome" required [ngClass]="{ 'is-invalid': !isSobrenomeValid() }">
+  <div class="error-message" *ngIf="!isSobrenomeValid()">Sobrenome é obrigatório</div>
+
+  <!-- Campo Email -->
+  <label for="email">Email:</label>
+  <input type="email" id="email" [(ngModel)]="email" name="email" required [ngClass]="{ 'is-invalid': !isEmailValid() }">
+  <div class="error-message" *ngIf="!isEmailValid()">Email inválido</div>
+
+  <!-- Campo Matrícula -->
+  <label for="matricula">Matrícula:</label>
+  <input type="text" id="matricula" [(ngModel)]="matricula" name="matricula" required [ngClass]="{ 'is-invalid': !isMatriculaValid() }">
+  <div class="error-message" *ngIf="!isMatriculaValid()">Matrícula inválida</div>
+
+  <!-- Campo Celular -->
+  <label for="celular">Celular:</label>
+  <input type="text" id="celular" [(ngModel)]="celular" name="celular" required [ngClass]="{ 'is-invalid': !isCelularValid() }">
+  <div class="error-message" *ngIf="!isCelularValid()">Celular inválido</div>
+
+  <!-- Campos de Endereço -->
+  <label for="rua">Rua:</label>
+  <input type="text" id="rua" [(ngModel)]="rua" name="rua" required [ngClass]="{ 'is-invalid': !isRuaValid() }">
+  <div class="error-message" *ngIf="!isRuaValid()">Rua é obrigatória</div>
+
+  <label for="cidade">Cidade:</label>
+  <input type="text" id="cidade" [(ngModel)]="cidade" name="cidade" required [ngClass]="{ 'is-invalid': !isCidadeValid() }">
+  <div class="error-message" *ngIf="!isCidadeValid()">Cidade é obrigatória</div>
+
+  <label for="estado">Estado:</label>
+  <input type="text" id="estado" [(ngModel)]="estado" name="estado" required [ngClass]="{ 'is-invalid': !isEstadoValid() }">
+  <div class="error-message" *ngIf="!isEstadoValid()">Estado é obrigatório</div>
+
+  <label for="codigoPostal">Código Postal:</label>
+  <input type="text" id="codigoPostal" [(ngModel)]="codigoPostal" name="codigoPostal" required [ngClass]="{ 'is-invalid': !isCodigoPostalValid() }">
+  <div class="error-message" *ngIf="!isCodigoPostalValid()">Código Postal é obrigatório</div>
+
+  <!-- Botão de envio do formulário -->
+  <button type="submit" [disabled]="!formValid">Cadastrar</button>
+</form>
